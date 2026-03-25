@@ -521,12 +521,12 @@ impl ExtendedSpendingKey {
 // A Sapling extended full viewing key
 #[derive(Clone)]
 pub struct ExtendedFullViewingKey {
-    pub depth: u8,
-    pub parent_fvk_tag: FvkTag,
-    pub child_index: KeyIndex,
-    pub chain_code: ChainCode,
+    depth: u8,
+    parent_fvk_tag: FvkTag,
+    child_index: KeyIndex,
+    chain_code: ChainCode,
     pub fvk: FullViewingKey,
-    pub dk: DiversifierKey,
+    pub(crate) dk: DiversifierKey,
 }
 
 impl std::cmp::PartialEq for ExtendedFullViewingKey {
