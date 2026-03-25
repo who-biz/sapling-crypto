@@ -255,7 +255,6 @@ impl Domain for SaplingDomain {
         EphemeralSecretKey::from_bytes(&ephemeral_key.0).into()
     }
 
-
     fn parse_note_plaintext_without_memo_ivk(
         &self,
         ivk: &Self::IncomingViewingKey,

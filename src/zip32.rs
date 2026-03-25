@@ -136,7 +136,7 @@ impl FvkFingerprint {
 
 /// A Sapling full viewing key tag
 #[derive(Clone, Copy, Debug, PartialEq)]
-pub struct FvkTag(pub [u8; 4]);
+struct FvkTag([u8; 4]);
 
 impl FvkTag {
     fn master() -> Self {
